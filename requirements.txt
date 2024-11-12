@@ -1,0 +1,17 @@
+addict
+future
+lmdb
+numpy<2.0
+opencv-python
+Pillow
+pyyaml
+requests
+scikit-image
+scikit-learn
+scipy
+tb-nightly
+tqdm
+yapf
+ptflops
+matplotlib
+h5py

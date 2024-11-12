@@ -1,0 +1,30 @@
+train:
+  dataset:
+    dataset_dir: "dataset/training" # directory of sound-field image dataset
+    num_sound_source: [1, 2, 3, 4, 5] # Number of sound source (N). We provide N=1,2,...,5 in training dataset
+    num_total_data: 50000 #Dataset contains 10,000 samples for each N. Thus, the total is 50,000.
+  model: "SoundSilDS" # Name of network architecture
+  epoch: 1 # Number of training epochs
+  batch_size: 16 # Batch size
+  lr: 1e-3 # Learining rate
+  decay: 0.95 # Decay rate of schedular
+  weight: 10 # Weighting parameter for two losses: loss = L_denoise + weight * L_seg
+  save_dir: "results_train/" # dirctory to save the final results. A sub directory with the timestamp as its name is automatically generated below this folder.
+  cpt_dir: "checkpoints" # directory to save checkpoints. A sub directory with the timestamp as its name is automatically generated below this folder.
+
+validation:
+  dataset:
+    dataset_dir: "dataset/validation" # directory of sound-field image dataset
+    num_sound_source: [1, 2, 3, 4, 5] # N = 1,2,...,5
+    num_total_data: 2500 #For each N, the dataset contains 500 samples.
+  batch_size: 1 # set to 1 to avoid memory overflow in author's environment
+
+eval:
+  dataset:
+    dataset_dir: "dataset/evaluation" # directory of sound-field image dataset
+    num_sound_source: [1, 2, 3, 4, 5] # N = 1,2,...,10
+    num_total_data: 2500 #For each N, the dataset contains 500 samples.
+  network:
+    model: "SoundSilDS" # Name of network architecture
+    weights_file: "trained_weights/SoundSilDS_white.pth" # #trained weights to load
+  save_dir: "results_eval/" # dirctory to save the evaluation results. A sub directory with the timestamp as its name is automatically generated below this folder.
