@@ -16,9 +16,9 @@ The SoundSil-DS is a deep learning model for noise reduction in sound-field imag
 ## Getting started
 Our code is based on [CascadedGaze](https://github.com/Ascend-Research/CascadedGaze).
 
-1. Download [trained weights](https://doi.org/10.5281/zenodo.14085791) and place them in the 'trained_weights' directory.
+1. Download [trained weights](https://zenodo.org/records/14085791) and place them in the 'trained_weights' directory.
 
-3. Download [dataset](https://doi.org/10.5281/zenodo.14086038) and place them in the 'dataset' directory. When you run evaluation.py, 'evaluatation' directory from the dataset is required. When you run train.py, 'training' and 'validation' directories are required.
+3. Download [dataset](https://zenodo.org/records/14086038) and place them in the 'dataset' directory. When you run evaluation.py, 'evaluatation' directory from the dataset is required. When you run train.py, 'training' and 'validation' directories are required.
 
 4. Install dependencies.
 ```sh
