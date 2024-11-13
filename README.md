@@ -3,8 +3,8 @@
 
 
 The official PyTorch implementation of the paper
-> [SoundSil-DS: Deep Denoising and Segmentation of Sound-field Images with Silhouettes](https://arxiv.org/abs/2411.07517) \
-This repository contains the codebase used in our paper. You can leverage our pretrained model to denoise your own sound-field images.
+> [SoundSil-DS: Deep Denoising and Segmentation of Sound-field Images with Silhouettes](https://arxiv.org/abs/2411.07517)
+
 
 ## What is SoundSil-DS?
 The SoundSil-DS is a deep learning model for noise reduction in sound-field images with object silhouettes measured by optical methods, such as interferometer and holography. This is a continuous work of [Deep Sound-Field Denoiser](https://github.com/nttcslab/deep-sound-field-denoiser). It treats the complex-valued amplitude of the sound field in the frequency domain as a 2-channel image consisting of real and imaginary parts, and performs noise reduction and object-silhouette segmentation using a network based on [CascadedGaze](https://github.com/Ascend-Research/CascadedGaze). The network has been trained using a sound-field image dataset we created using 2D acoustic simulations. The dataset includes noisy data with additive Gaussian white noise.
