@@ -3,7 +3,7 @@
 
 
 The official PyTorch implementation of the paper
-> [SoundSil-DS: Deep Denoising and Segmentation of Sound-field Images with Silhouettes] \
+> [SoundSil-DS: Deep Denoising and Segmentation of Sound-field Images with Silhouettes](https://arxiv.org/abs/2411.07517) \
 This repository contains the codebase used in our paper. You can leverage our pretrained model to denoise your own sound-field images.
 
 ## What is SoundSil-DS?
@@ -60,7 +60,15 @@ Read the [NTTSoftwareLicenseAgreement.pdf](NTTSoftwareLicenseAgreement.pdf).
 # Citation
 If you use SoundSil-DS, or this codebase in your work, please consider citing this work:
 ```
-R. Tanigawa, K. Ishikawa, N. Harada, and Y. Oikawa ``SoundSil-DS: Deep Denoising and Segmentation of Sound-field Images with Silhouettes,'' arXiv:xxxx (2024).
+@misc{tanigawa2024soundsilds,
+      title={SoundSil-DS: Deep Denoising and Segmentation of Sound-field Images with Silhouettes}, 
+      author={Risako Tanigawa and Kenji Ishikawa and Noboru Harada and Yasuhiro Oikawa},
+      year={2024},
+      eprint={2411.07517},
+      archivePrefix={arXiv},
+      primaryClass={eess.SP},
+      url={https://arxiv.org/abs/2411.07517}, 
+}
 
 ```
 
